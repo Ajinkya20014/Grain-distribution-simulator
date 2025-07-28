@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
+
+import os, sys
+
+# ensure the folder containing app.py is on Python's import path
+sys.path.append(os.path.dirname(__file__))
+
 from simulation import run_simulation
 
 # Page configuration
